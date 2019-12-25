@@ -10,6 +10,7 @@
 html {
   font-family: 'Rubik', sans-serif;
   font-size: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,6 +51,7 @@ button {
 #hero {
   display: flex;
   margin: 6rem 2.5rem 3rem 9.6rem;
+  position: relative;
 }
 
 #hero-text {
@@ -59,6 +61,21 @@ button {
 
 #hero-button {
   margin-left: 0.8rem;
+}
+
+#logo-bookmark-hero {
+  background: url(./images/logo-bookmark.svg);
+  border: 2px solid var(--soft-blue);
+  border-radius: 10rem;
+  width: 1000px;
+  height: 345px;
+  position: absolute;
+  left: calc(100% - 455px);
+  z-index: -99;
+  bottom: -20px;
+  background-repeat: no-repeat;
+  background-size: 10000px 1000px;
+  background-position: -100px -100px;
 }
 
 .nav-menu {
