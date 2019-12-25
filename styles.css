@@ -2,8 +2,9 @@
   --main-soft-red: hsl(0, 94%, 66%);
   --white: #ffffff;
   --grayish-blue: hsl(229, 8%, 60%);
-  --vary-dark-blue: hsl(229, 31%, 21%);
+  --very-dark-blue: hsl(229, 31%, 21%);
   --soft-blue: hsl(231, 69%, 60%);
+  --light-grey: #eff0f5;
 }
 
 html {
@@ -12,8 +13,7 @@ html {
 }
 
 body {
-  width: 78%;
-  margin: 2.5rem auto;
+  font-size: 1.125rem;
 }
 
 h1 {
@@ -27,12 +27,17 @@ p {
 button {
   padding: 1rem 1.5rem;
   border-radius: 5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  border: none;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 78%;
+  margin: 2.5rem auto;
 }
 
 #login {
@@ -40,6 +45,20 @@ button {
   color: var(--white);
   padding: 0.8rem 2.2rem;
   border-radius: 5px;
+}
+
+#hero {
+  display: flex;
+  margin: 6rem 2.5rem 3rem 9.6rem;
+}
+
+#hero-text {
+  width: 85%;
+  line-height: 1.8rem;
+}
+
+#hero-button {
+  margin-left: 0.8rem;
 }
 
 .nav-menu {
@@ -59,4 +78,11 @@ button {
 .blue-button {
   color: var(--white);
   background-color: var(--soft-blue);
+}
+
+.grey-button {
+  box-shadow: 0px 7px 9px -2px rgba(141, 143, 153, 0.34);
+  color: var(--very-dark-blue);
+  font-weight: bold;
+  background-color: var(--light-grey);
 }
