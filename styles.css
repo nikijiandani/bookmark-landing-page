@@ -15,10 +15,17 @@ html {
 
 body {
   font-size: 1.125rem;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 p {
@@ -50,7 +57,7 @@ button {
 
 #hero {
   display: flex;
-  margin: 6rem 2.5rem 3rem 9.6rem;
+  margin: 6rem 2.5rem 8rem 9.6rem;
   position: relative;
 }
 
@@ -78,6 +85,23 @@ button {
   background-position: -100px -100px;
 }
 
+#feature-list {
+  list-style-type: none;
+  display: flex;
+  width: 58%;
+  padding: 0;
+  border-bottom: 1px solid var(--grayish-blue);
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+}
+
+#feature-list a {
+  text-decoration: none;
+  color: var(--very-dark-blue);
+  font-size: 1.05rem;
+  margin: 0 2.9rem;
+}
+
 .nav-menu {
   list-style-type: none;
   display: flex;
@@ -102,4 +126,42 @@ button {
   color: var(--very-dark-blue);
   font-weight: bold;
   background-color: var(--light-grey);
+}
+
+.features {
+  text-align: center;
+  margin: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features p {
+  width: 44%;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1px;
+  line-height: 1.8rem;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tab-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  width: 35%;
+}
+
+.tab-right p {
+  width: 100%;
+}
+
+.tab:not(:target) {
+  display: none;
 }
