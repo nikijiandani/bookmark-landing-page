@@ -1,18 +1,38 @@
 :root {
   --main-soft-red: hsl(0, 94%, 66%);
   --white: #ffffff;
+  --grayish-blue: hsl(229, 8%, 60%);
+  --vary-dark-blue: hsl(229, 31%, 21%);
+  --soft-blue: hsl(231, 69%, 60%);
 }
 
 html {
   font-family: 'Rubik', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  width: 78%;
+  margin: 2.5rem auto;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  color: var(--grayish-blue);
+}
+
+button {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem auto;
-  width: 78%;
 }
 
 #login {
@@ -34,4 +54,9 @@ html {
 
 .nav-menu li {
   letter-spacing: 0.1rem;
+}
+
+.blue-button {
+  color: var(--white);
+  background-color: var(--soft-blue);
 }
