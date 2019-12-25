@@ -1,3 +1,37 @@
+:root {
+  --main-soft-red: hsl(0, 94%, 66%);
+  --white: #ffffff;
+}
+
 html {
   font-family: 'Rubik', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  width: 78%;
+}
+
+#login {
+  background-color: var(--main-soft-red);
+  color: var(--white);
+  padding: 0.8rem 2.2rem;
+  border-radius: 5px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  flex-grow: 0.25;
+  justify-content: space-between;
+  align-items: baseline;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.nav-menu li {
+  letter-spacing: 0.1rem;
 }
